@@ -552,6 +552,9 @@ form p {
     background: #f0f0f0;
     border-top: 1px solid #d8d8d8;
 }
+.footer__wrapper__logo{
+    margin-right: 20px;
+}
 
 .appstore, .googleplay {
     opacity: 0.2;
