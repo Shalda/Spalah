@@ -571,15 +571,13 @@ form p {
 
 .footer__wrapper__logo__emblem i {
     float: left;
-    margin-left: 0;
-
     margin-right: 10px;
 }
-.footer__wrapper__logo__emblem p{
+
+.footer__wrapper__logo__emblem p {
     float: left;
 
 }
-
 
 .footer__wrapper__social__network__icons i {
     margin-left: 5px;
@@ -941,24 +939,51 @@ form p {
     }
 
     .footer-last-line {
-        border-color: rgba(215, 215, 215, 0.2)  ;
+        border-color: rgba(215, 215, 215, 0.2);
         display: inherit;
         order: 5;
         margin: 28px 0;
     }
+
     .footer__wrapper__logo__emblem,
-     .footer__wrapper__logo__policy,
-     .footer__wrapper__help,
-     .footer__wrapper__partners,
-     .footer__wrapper__bank,
-     .footer__wrapper__social {
+    .footer__wrapper__logo__policy,
+    .footer__wrapper__help,
+    .footer__wrapper__partners,
+    .footer__wrapper__bank,
+    .footer__wrapper__social {
         padding: 0 15px;
-     }
+    }
+
     .footer__wrapper {
-        font-size: .7em;
+        font-size: .8em;
+        text-align: center;
+    }
+
+    .footer__wrapper__social__network {
+        position: inherit;
+        padding-bottom: 10px;
+    }
+
+    .footer__wrapper__logo__emblem i,
+    .footer__wrapper__logo__emblem p {
+        float: none;
+    }
+
+    @media screen and (max-width: 400px) {
+        .footer__wrapper__social__network {
+            position: absolute
+        }
+
+        .footer__wrapper__logo__emblem i,
+        .footer__wrapper__logo__emblem p {
+            float: left;
+        }
+
+        .footer__wrapper {
+            font-size: .7em;
+        }
     }
 }
-
 
 
 
