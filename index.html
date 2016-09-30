@@ -7,21 +7,489 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./js/jquery.bxslider.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/jquery.bxslider.min.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 <body>
 <div class="wraper">
     <header>
         <div class="header-banner">
             <img src="./images/Cup.png" alt="cup-emblem" class="header-banner__cup-emblem">
-            <div class="header-banner__text">
-                <p>ГЛАВНОЕ СОБЫТИЕ  -  ФИНАЛ ЧЕ 2016</p>
-                <p>ТУРНИР С ПРИЗОВЫМ ФОНДОМ</p>
-                <p>€ 50 000</p>
-                <p>Узнай как попасть в этот турнир?</p>
+            <div class="header-banner__commercial">
+                <a href="">
+                    <p>ГЛАВНОЕ СОБЫТИЕ - ФИНАЛ ЧЕ 2016</p>
+                    <p>ТУРНИР С ПРИЗОВЫМ ФОНДОМ</p>
+                    <p>€ 50 000</p>
+                    <p>Узнай как попасть в этот турнир?</p>
+                </a>
             </div>
             <img src="./images/Euro_logo.png" alt="" class="header-banner__euro-emblem">
         </div>
     </header>
+    <div class="header-main">
+        <div class="header-main__nav">
+            <div class="header-main__nav__logo"><img src="./images/logo.png" alt=""></div>
+            <div class="header-main__nav__account">
+                <a href="" class="header-main__nav__account__button">Зарегистрироваться</a>
+                <a href="" class="header-main__nav__account__button">Войти</a>
+            </div>
+            <div class="header-main__nav__help">
+                <a href=""> Посмотреть все турниры</a>
+                <a href="">Как играть?</a>
+            </div>
+        </div>
+        <div class="header-main__description">
+            <div class="header-main__description-wrapper">
+                <blockquote>
+                    <p class="header-main__description-wrapper__text">ДОКАЖИ, ЧТО ТЫ ЛУЧШЕ<br>ВСЕХ РАЗБИРАЕШЬСЯ<br>В
+                        ФУТБОЛЕ. ПРИМИ УЧАСТИЕ<br>В <a href="">УНИКАЛЬНЫХ</a>ТУРНИРАХ</p>
+                    <div><a href="" class="header-main__description__blockquote__button">Начать игру</a></div>
+                </blockquote>
+                <div class="header-main_description__tutorial">
+                    <span>ЧТО ТАКОЕ JAMBLER?</span>
+                    <div class="video">
+                        <a href="https://www.youtube.com/embed/vJUt6mpi2H0" target="_blank"
+                           onClick="window.open(this.href, '', 'width='+screen.availWidth/2+',height='+screen.availHeight/2+',top='+screen.availHeight/4+',left='+screen.availWidth/4); return false;">
+                            <img title="видео: переправа" alt="переправа" src="./images/video.png"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="preference">
+            <div class="preference__text">
+                <img src="./images/dash.png" alt="" class="dash">
+                <p>РЕГИСТРИРУЙСЯ НА JAMBLER ИЛИ ВХОДИ С ПОМОЩЬЮ АККАУНТА СОЦ. СЕТЕЙ</p>
+                <img src="./images/dash.png" alt="" class="dash">
+                <p>ВЫБИРАЙ ТУРНИР НА МАТЧ, КОТОРЫЙ ТЕБЯ ИНТЕРЕСУЕТ И РЕГИСТРИРУЙСЯ В НЕМ</p>
+                <img src="./images/dash.png" alt="" class="dash">
+                <p>СЛЕДИ ЗА ХОДОМ МАТЧА И ПРЕДСКАЗЫВАЙ СОБЫТИЯ В ОПРЕДЕЛЕННЫЕ ТОБОЙ ОТРЕЗКИ ВРЕМЕНИ</p>
+                <img src="./images/dash.png" alt="" class="dash">
+                <p>ЗДЕСЬ ИГРАЮТ ВСЕ ЖЕЛАЮЩИЕ ТВОЯ ЗАДАЧА НАБРАТЬ БОЛЬШЕЕ КОЛИЧЕСТВО ОЧКОВ И ЗАНЯТЬ ПРИЗОВОЕ МЕСТО</p>
+            </div>
+        </div>
+        <div class="slider">
+            <ul class="bxslider">
+                <li><img src="./images/landing-slider1.jpg"/></li>
+                <li><img src="./images/landing-slider2.jpg"/></li>
+                <li><img src="./images/landing-slider3.jpg"/></li>
+            </ul>
+        </div>
+        <div class="bonus">
+            <div class="bonus__social">
+                <a href="" class="bonus__social-facebook">
+                    <div class="bonus__social-facebook__invite">
+                        <div class="bonus__social-facebook__invite__exp">
+                            ПРИГЛАСИТЬ ДРУЗЕЙ ЧЕРЕЗ FACEBOOK
+                            <i class="facebookw" aria-hidden="true"></i>
+                            <span class="bonus__social-facebook__invite__exp__text">+1.6 k</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="bonus__social-google">
+                    <div class="bonus__social-google__invite">
+                        <div class="bonus__social-google__invite__exp">
+                            ПРИГЛАСИТЬ ДРУЗЕЙ ЧЕРЕЗ GOOGLE+
+                            <i class="googlew" aria-hidden="true"></i>
+                            <span class="bonus__social-facebook__invite__exp__text">+568</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="bonus__social-vk">
+                    <div class="bonus__social-vk__invite">
+                        <div class="bonus__social-vk__invite__exp">
+                            ПРИГЛАСИТЬ ДРУЗЕЙ ЧЕРЕЗ VKONTAKTE
+                            <i class="vkw" aria-hidden="true"></i>
+                            <span class="bonus__social-vk__invite__exp__text">+18.4 k</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="bonus__text">
+                <img src="./images/dash.png" alt="">
+                <p>ЧЕМ БОЛЬШЕ УЧАСТНИКОВ <br> ТЕМ ВЫШЕ ПРИЗОВЫЕ В ТУРНИРАХ. <br> ПРИГЛАШАЙ ДРУЗЕЙ НА JAMBLER, <br>
+                    ВЫИГРЫВАЙ
+                    БОЛЬШЕ</p>
+            </div>
+        </div>
+        <div class="table">
+            <div class="before-table__text">
+                <img src="./images/dash.png" alt="">
+                <p>ПРИСОЕДИНЯЙСЯ К УЖЕ <br> НАЧАВШИМСЯ ТУРНИРАМ <br> ИЛИ ЗАРЕГИСТРИРУЙСЯ <br>НА ПРЕДСТОЯЩИЕ.</p>
+            </div>
+            <div class="table__wrapper">
+                <table border="0" cellspacing="0">
+                    <tr class="table__match">
+                        <td rowspan="3" align="right" valign="top" class="table__match__ball">
+                            <div class="ball"></div>
+                        </td>
+                        <td colspan="10" class="table__match__live">Live. Spain/Primera Division. Barselona - Real
+                            Madrid. €
+                            100Gtd
+                        </td>
+                        <th colspan="2" rowspan="3"><a href="" class="table__match__bottom-game">Начать Игру</a></th>
+                    </tr>
+                    <tr class="table__description">
+                        <td class="">Start time:</td>
+                        <td class=""></td>
+                        <td class="">Buy-in:</td>
+                        <td class=""></td>
+                        <td class="">Prize Pool:</td>
+                        <td class=""></td>
+                        <td class="">Entires:</td>
+                        <td class=""></td>
+                        <td class="">Status:</td>
+                        <td class=""></td>
+                    </tr>
+                    <tr class="table__value">
+                        <td class="table__value-time">00:07:24</td>
+                        <td></td>
+                        <td>freeroll</td>
+                        <td></td>
+                        <td>€ 100 Gtd</td>
+                        <td></td>
+                        <td>41<span>/500</span></td>
+                        <td></td>
+                        <td>Registering</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table border="0" cellspacing="0">
+                    <tr class="table__match">
+                        <td rowspan="3" align="right" valign="top" class="table__match__ball">
+                            <div class="ball"></div>
+                        </td>
+                        <td colspan="10" class="table__match__live">Live. Spain/Primera Division. Barselona - Real
+                            Madrid. €
+                            100Gtd
+                        </td>
+                        <th colspan="2" rowspan="3"><a href="" class="table__match__bottom-game">Начать Игру</a></th>
+                    </tr>
+                    <tr class="table__description">
+                        <td class="">Start time:</td>
+                        <td class=""></td>
+                        <td class="">Buy-in:</td>
+                        <td class=""></td>
+                        <td class="">Prize Pool:</td>
+                        <td class=""></td>
+                        <td class="">Entires:</td>
+                        <td class=""></td>
+                        <td class="">Status:</td>
+                        <td class=""></td>
+                    </tr>
+                    <tr class="table__value">
+                        <td class="table__value-time">00:07:24</td>
+                        <td></td>
+                        <td>freeroll</td>
+                        <td></td>
+                        <td>€ 100 Gtd</td>
+                        <td></td>
+                        <td>41<span>/500</span></td>
+                        <td></td>
+                        <td>Registering</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table border="0" cellspacing="0">
+                    <tr class="table__match">
+                        <td rowspan="3" align="right" valign="top" class="table__match__ball">
+                            <div class="ball"></div>
+                        </td>
+                        <td colspan="10" class="table__match__live">Live. Spain/Primera Division. Barselona - Real
+                            Madrid. €
+                            100Gtd
+                        </td>
+                        <th colspan="2" rowspan="3"><a href="" class="table__match__bottom-game">Начать Игру</a></th>
+                    </tr>
+                    <tr class="table__description">
+                        <td class="">Start time:</td>
+                        <td class=""></td>
+                        <td class="">Buy-in:</td>
+                        <td class=""></td>
+                        <td class="">Prize Pool:</td>
+                        <td class=""></td>
+                        <td class="">Entires:</td>
+                        <td class=""></td>
+                        <td class="">Status:</td>
+                        <td class=""></td>
+                    </tr>
+                    <tr class="table__value">
+                        <td class="table__value-time">00:07:24</td>
+                        <td></td>
+                        <td>freeroll</td>
+                        <td></td>
+                        <td>€ 100 Gtd</td>
+                        <td></td>
+                        <td>41<span>/500</span></td>
+                        <td></td>
+                        <td>Registering</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table border="0" cellspacing="0">
+                    <tr class="table__match">
+                        <td rowspan="3" align="right" valign="top" class="table__match__ball">
+                            <div class="ball"></div>
+                        </td>
+                        <td colspan="10" class="table__match__live">Live. Spain/Primera Division. Barselona - Real
+                            Madrid. €
+                            100Gtd
+                        </td>
+                        <th colspan="2" rowspan="3"><a href="" class="table__match__bottom-game">Начать Игру</a></th>
+                    </tr>
+                    <tr class="table__description">
+                        <td class="">Start time:</td>
+                        <td class=""></td>
+                        <td class="">Buy-in:</td>
+                        <td class=""></td>
+                        <td class="">Prize Pool:</td>
+                        <td class=""></td>
+                        <td class="">Entires:</td>
+                        <td class=""></td>
+                        <td class="">Status:</td>
+                        <td class=""></td>
+                    </tr>
+                    <tr class="table__value">
+                        <td class="table__value-time">00:07:24</td>
+                        <td></td>
+                        <td>freeroll</td>
+                        <td></td>
+                        <td>€ 100 Gtd</td>
+                        <td></td>
+                        <td>41<span>/500</span></td>
+                        <td></td>
+                        <td>Registering</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table border="0" cellspacing="0">
+                    <tr class="table__match">
+                        <td rowspan="3" align="right" valign="top" class="table__match__ball">
+                            <div class="ball"></div>
+                        </td>
+                        <td colspan="10" class="table__match__live">Live. Spain/Primera Division. Barselona - Real
+                            Madrid. €
+                            100Gtd
+                        </td>
+                        <th colspan="2" rowspan="3"><a href="" class="table__match__bottom-game">Начать Игру</a></th>
+                    </tr>
+                    <tr class="table__description">
+                        <td class="">Start time:</td>
+                        <td class=""></td>
+                        <td class="">Buy-in:</td>
+                        <td class=""></td>
+                        <td class="">Prize Pool:</td>
+                        <td class=""></td>
+                        <td class="">Entires:</td>
+                        <td class=""></td>
+                        <td class="">Status:</td>
+                        <td class=""></td>
+                    </tr>
+                    <tr class="table__value">
+                        <td class="table__value-time">00:07:24</td>
+                        <td></td>
+                        <td>freeroll</td>
+                        <td></td>
+                        <td>€ 100 Gtd</td>
+                        <td></td>
+                        <td>41<span>/500</span></td>
+                        <td></td>
+                        <td>Registering</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table border="0" cellspacing="0">
+                    <tr class="table__match">
+                        <td rowspan="3" align="right" valign="top" class="table__match__ball">
+                            <div class="ball"></div>
+                        </td>
+                        <td colspan="10" class="table__match__live">Live. Spain/Primera Division. Barselona - Real
+                            Madrid. €
+                            100Gtd
+                        </td>
+                        <th colspan="2" rowspan="3"><a href="" class="table__match__bottom-game">Начать Игру</a></th>
+                    </tr>
+                    <tr class="table__description">
+                        <td class="">Start time:</td>
+                        <td class=""></td>
+                        <td class="">Buy-in:</td>
+                        <td class=""></td>
+                        <td class="">Prize Pool:</td>
+                        <td class=""></td>
+                        <td class="">Entires:</td>
+                        <td class=""></td>
+                        <td class="">Status:</td>
+                        <td class=""></td>
+                    </tr>
+                    <tr class="table__value">
+                        <td class="table__value-time">00:07:24</td>
+                        <td></td>
+                        <td>freeroll</td>
+                        <td></td>
+                        <td>€ 100 Gtd</td>
+                        <td></td>
+                        <td>41<span>/500</span></td>
+                        <td></td>
+                        <td>Registering</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table border="0" cellspacing="0">
+                    <tr class="table__match">
+                        <td rowspan="3" align="right" valign="top" class="table__match__ball">
+                            <div class="ball"></div>
+                        </td>
+                        <td colspan="10" class="table__match__live">Live. Spain/Primera Division. Barselona - Real
+                            Madrid. €
+                            100Gtd
+                        </td>
+                        <th colspan="2" rowspan="3"><a href="" class="table__match__bottom-game">Начать Игру</a></th>
+                    </tr>
+                    <tr class="table__description">
+                        <td class="">Start time:</td>
+                        <td class=""></td>
+                        <td class="">Buy-in:</td>
+                        <td class=""></td>
+                        <td class="">Prize Pool:</td>
+                        <td class=""></td>
+                        <td class="">Entires:</td>
+                        <td class=""></td>
+                        <td class="">Status:</td>
+                        <td class=""></td>
+                    </tr>
+                    <tr class="table__value">
+                        <td class="table__value-time">00:07:24</td>
+                        <td></td>
+                        <td>freeroll</td>
+                        <td></td>
+                        <td>€ 100 Gtd</td>
+                        <td></td>
+                        <td>41<span>/500</span></td>
+                        <td></td>
+                        <td>Registering</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table border="0" cellspacing="0">
+                    <tr class="table__match">
+                        <td rowspan="3" align="right" valign="top" class="table__match__ball">
+                            <div class="ball"></div>
+                        </td>
+                        <td colspan="10" class="table__match__live">Live. Spain/Primera Division. Barselona - Real
+                            Madrid. €
+                            100Gtd
+                        </td>
+                        <th colspan="2" rowspan="3"><a href="" class="table__match__bottom-game">Начать Игру</a></th>
+                    </tr>
+                    <tr class="table__description">
+                        <td class="">Start time:</td>
+                        <td class=""></td>
+                        <td class="">Buy-in:</td>
+                        <td class=""></td>
+                        <td class="">Prize Pool:</td>
+                        <td class=""></td>
+                        <td class="">Entires:</td>
+                        <td class=""></td>
+                        <td class="">Status:</td>
+                        <td class=""></td>
+                    </tr>
+                    <tr class="table__value">
+                        <td class="table__value-time">00:07:24</td>
+                        <td></td>
+                        <td>freeroll</td>
+                        <td></td>
+                        <td>€ 100 Gtd</td>
+                        <td></td>
+                        <td>41<span>/500</span></td>
+                        <td></td>
+                        <td>Registering</td>
+                        <td></td>
+                    </tr>
+                    <tr class="table__all">
+                        <td colspan="13" align="center" height="80"><a href="">Посмотреть все турниры</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form__left">
+                <div class="form__left__text">
+                    <img src="./images/dash.png" alt="">
+                    <p>СОЗДАЙ АККАУНТ НА JAMBLER <br> НАЧИНАЙ ВЫИГРЫВАТЬ УЖЕ <br> СЕГОДНЯ</p>
+                </div>
+                <div class="form__left__main">
+                    <form action="">
+                        <p><input type="name" placeholder="Никнэйм"></p>
+                        <p><input type="email" placeholder="Адрес эл.почты"></p>
+                        <p><input type="password" placeholder="Пароль"></p>
+                    </form>
+                </div>
+                <div class="form__left__button">
+                    <a href="">Создать Аккаунт</a>
+                </div>
+            </div>
+            <div class="form__right">
+                <div class="form__right__text">
+                    <img src="./images/dash.png" alt="">
+                    <p>ЛИБО ЗАРЕГИСТРИРУЙСЯ <br> С ПОМОЩЬЮ АККАУНТА В <br> СОЦИАЛЬНОЙ СЕТИ</p>
+                </div>
+                <div class="form__right__buttons">
+                    <a href="">Facebook</a>
+                    <a href="">Google+</a>
+                    <a href="">Vkontakte</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <hr>
+        <div class="footer-bg">
+            <div class="footer-bg__wrapper">
+                <div class="footer-bg__wrapper__logo">
+                    <div class="footer-bg__wrapper__logo__emblem">
+                        <a href=""><i class="logog"></i></a>
+                        <p>Jambler Inc.<br>
+                            All Rights Reserved.<br>
+                            2016.</p>
+                    </div>
+                    <div class="footer-bg__wrapper__logo__policy">
+                        <a href=""><span class="green-footer">Terms of Use</span></a>
+                        <a href=""><span class="green-footer">Privacy Policy</span></a>
+                    </div>
+                </div>
+                <div class="footer-bg__wrapper__help">
+                    <a href=""><p class="footer-bg__wrapper__help-first">HELP</p></a>
+                    <a href=""><p class="green-footer">Support</p></a>
+                    <a href=""><p class="green-footer">How to Play</p></a>
+                    <a href=""><p class="green-footer">FAQ</p></a>
+                </div>
+                <div class="footer-bg__wrapper__partners">
+                    <a href=""><p class="footer-bg__wrapper__partners-first">PARTNERS</p></a>
+                    <a href=""><p class="green-footer">Promotions</p></a>
+                    <a href=""><p class="green-footer">Referals</p></a>
+                    <a href=""><p class="green-footer">Affilates</p></a>
+                </div>
+                <div class="footer-bg__wrapper__social">
+                    <div class="footer-bg__wrapper__social__network">
+                        <div class="footer-bg__wrapper__social__network__icons">
+                            <a href=""><i class="facebookg"></i></a>
+                            <a href=""><i class="googleg"></i></a>
+                            <a href=""><i class="vkg"></i></a>
+                        </div>
+                        <span>Follow us:</span>
+                    </div>
+                    <div class="footer-bg__wrapper__social__mobile">
+                        <a href=""><i class="appstore"></i></a>
+                        <a href=""><i class="googleplay"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>
