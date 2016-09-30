@@ -535,23 +535,22 @@ form p {
     background: forestgreen;
 }
 
-hr {
-    background: #d8d8d8;
-}
-
-.footer-bg {
+.footer {
     background: #f0f0f0;
-    width: 100%;
+
 }
 
-.footer-bg__wrapper {
+.footer__wrapper {
     margin: 0 auto;
     max-width: 1360px;
     color: #9a9a9a;
     font-size: .8em;
     display: flex;
     justify-content: space-between;
-    padding: 1% 4%;
+    padding: 4% 4%;
+    position: relative;
+    background: #f0f0f0;
+    border-top: 1px solid #d8d8d8;
 }
 
 .appstore, .googleplay {
@@ -565,59 +564,80 @@ hr {
     padding-bottom: 5px;
 }
 
-.footer-bg__wrapper__logo__emblem i, .footer-bg__wrapper__logo__emblem p {
-    float: left;
-    margin-left: 7%;
-    margin-bottom: 16%;
+.footer__wrapper__logo__policy {
+    position: absolute;
+    bottom: 0;
 }
 
-.footer-bg__wrapper__social__network__icons i {
+.footer__wrapper__logo__emblem i {
+    float: left;
+    margin-left: 0;
+
+    margin-right: 10px;
+}
+.footer__wrapper__logo__emblem p{
+    float: left;
+
+}
+
+
+.footer__wrapper__social__network__icons i {
     margin-left: 5px;
 }
 
-.footer-bg__wrapper__social__network {
+.footer__wrapper__social__network {
     padding-bottom: 10%;
 }
 
-.footer-bg__wrapper__social__mobile {
+.footer__wrapper__social__mobile {
     display: flex;
     justify-content: flex-end;
 }
 
-.footer-bg__wrapper__social__mobile i {
+.footer__wrapper__social__mobile i {
     margin-left: 10px;
 }
 
-.footer-bg__wrapper__social__network {
+.footer__wrapper__social__network {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.footer-bg__wrapper__social__network span {
+.footer__wrapper__social__network span {
     align-self: center;
     padding-right: 5px;
 }
 
-.footer-bg__wrapper__logo__emblem i:after,
-.footer-bg__wrapper__logo__emblem p:after {
+.footer__wrapper__logo__emblem:after {
     content: '.';
     display: block;
     height: 0;
     clear: both;
 }
 
-.footer-bg__wrapper__social {
+.footer__wrapper__social {
     display: flex;
     flex-direction: column;
 }
 
-.footer-bg__wrapper__partners {
+.footer__wrapper__partners {
     margin-right: 25%;
 }
 
-.footer-bg__wrapper__help-first, .footer-bg__wrapper__partners-first {
+.footer__wrapper__help-first,
+.footer__wrapper__partners-first {
     padding-bottom: 40%;
     color: #9a9a9a;
+}
+
+.footer__wrapper__bank {
+    display: none;
+    opacity: 0.7;
+    padding: 20px 0 29px;
+}
+
+.footer-last {
+    display: none;
 }
 
 /*sprite начало*/
@@ -684,10 +704,52 @@ hr {
     height: 20px;
 }
 
+.footer__wrapper__logo__policy-first {
+    display: none;
+}
+
 .logog {
     background-position: -106px -164px;
     width: 20px;
     height: 24px;
+}
+
+.mastercard, .neteller, .paypal, .skrill, .visa {
+    display: inline-block;
+    background: url('../images/spritem.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+}
+
+.mastercard {
+    background-position: -3px -0px;
+    width: 50px;
+    height: 30px;
+}
+
+.neteller {
+    background-position: -56px -0px;
+    width: 50px;
+    height: 30px;
+}
+
+.paypal {
+    background-position: -3px -33px;
+    width: 50px;
+    height: 30px;
+}
+
+.skrill {
+    background-position: -56px -33px;
+    width: 50px;
+    height: 30px;
+}
+
+.visa {
+    background-position: -3px -66px;
+    width: 50px;
+    height: 30px;
 }
 
 /*sprite конец*/
@@ -695,7 +757,6 @@ hr {
     .before-table__text {
         padding-left: 5px;
     }
-
 }
 
 @media screen and (max-width: 1150px) {
@@ -708,7 +769,6 @@ hr {
         margin-left: 0;
         padding-left: 20px;
     }
-
 }
 
 @media screen and (max-width: 1100px) {
@@ -744,8 +804,10 @@ hr {
     .header-main__nav__help, .header-main__nav__account {
         float: none;
     }
-.bonus__social {
-    float: none }
+
+    .bonus__social {
+        float: none
+    }
 
     .bonus__text {
         float: none;
@@ -789,7 +851,116 @@ hr {
     .form__right {
         margin-right: 4%;
     }
+
+    .footer__wrapper__help-first,
+    .footer__wrapper__partners-first,
+    .footer__wrapper__logo__policy-first,
+    .footer__wrapper__social__network__icons,
+    .footer__wrapper__social__network,
+    .footer__wrapper__social__mobile,
+    .footer__wrapper__social__mobile i,
+    .footer__wrapper__logo__policy-first,
+    .footer__wrapper__partners {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .footer__wrapper__bank {
+        display: block;
+        order: 4;
+        min-width: 320px;
+    }
+
+    .footer__wrapper__help p,
+    .footer__wrapper__logo__policy p {
+        display: inline-block;
+        padding-right: 15px;
+        padding-bottom: 25px;
+    }
+
+    .footer__wrapper__partners p,
+    .footer__wrapper__partners p a {
+        display: inline-block;
+        padding-right: 15px;
+        padding-bottom: 17px;
+    }
+
+    .footer__wrapper__social__network span {
+        display: none;
+    }
+
+    .footer__wrapper__logo__emblem i {
+        margin-left: 0;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .footer__wrapper__logo__policy {
+        position: inherit;
+        order: 3;
+    }
+
+    .footer__wrapper__help {
+        order: 1;
+    }
+
+    .footer__wrapper__partners {
+        order: 2;
+        min-width: 320px;
+    }
+
+    .footer__wrapper__social {
+        order: 6;
+    }
+
+    .footer__wrapper__social__network {
+        position: absolute;
+        top: 27px;
+        left: 169px;
+    }
+
+    .footer__wrapper__social__mobile {
+        min-width: 320px;
+    }
+
+    .footer__wrapper__social__mobile a {
+        display: inline-block;
+    }
+
+    .footer__wrapper__logo {
+        padding-bottom: 20px;
+    }
+
+    .footer__wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer-last-line {
+        border-color: #d8d8d8;
+        display: inherit;
+        order: 5;
+        margin: 28px 0;
+    }
+    .footer__wrapper__logo__emblem,
+     .footer__wrapper__logo__policy,
+     .footer__wrapper__help,
+     .footer__wrapper__partners,
+     .footer__wrapper__bank,
+     .footer__wrapper__social {
+        padding: 0 15px;
+     }
+    .footer__wrapper {
+        font-size: .7em;
+    }
 }
+
+
+
 
 
 
