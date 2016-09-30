@@ -981,6 +981,7 @@ form p {
 
         .footer__wrapper {
             font-size: .7em;
+            text-align: left;
         }
     }
 }
