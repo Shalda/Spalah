@@ -330,13 +330,13 @@ blockquote p a {
 
 .bonus__social {
     float: left;
-    margin-top: 7%;
-    margin-left: 11%;
+    margin: 7% 8% 2% 11%;
+
 }
 
 .bonus__text {
-    float: left;
-    margin-left: 20%;
+    float: right;
+    padding-right: 12%;
 }
 
 .bonus:after {
@@ -572,18 +572,20 @@ hr {
 }
 
 .footer-bg__wrapper__social__network__icons i {
-margin-left: 5px;
+    margin-left: 5px;
 }
+
 .footer-bg__wrapper__social__network {
     padding-bottom: 10%;
 }
+
 .footer-bg__wrapper__social__mobile {
     display: flex;
     justify-content: flex-end;
 }
 
 .footer-bg__wrapper__social__mobile i {
-margin-left: 10px;
+    margin-left: 10px;
 }
 
 .footer-bg__wrapper__social__network {
@@ -608,7 +610,6 @@ margin-left: 10px;
     display: flex;
     flex-direction: column;
 }
-
 
 .footer-bg__wrapper__partners {
     margin-right: 25%;
@@ -689,10 +690,87 @@ margin-left: 10px;
     height: 24px;
 }
 
-/*sprite конец/*
+/*sprite конец*/
+@media screen and (max-width: 1185px) {
+    .before-table__text {
+        padding-left: 5px;
+    }
 
+}
 
+@media screen and (max-width: 1150px) {
+    .bonus__social {
+        margin: 7% 8% 2% 0;
+        padding-left: 20px;
+    }
 
+    .form__left {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    *[class$="text"] {
+        font-size: 1.5em;
+    }
+
+    .table {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .before-table__text {
+        padding-left: 0px;
+        padding-bottom: 50px;
+    }
+
+    .table__wrapper {
+        padding-right: 5%;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    *[class$="text"] {
+        font-size: 1.2em;
+    }
+
+    .header-main__nav__help, .header-main__nav__account {
+        float: none;
+    }
+
+    .header-banner p {
+        font-size: 1.4em;
+    }
+
+    .header-banner p:nth-child(3) {
+        font-size: 2em;
+    }
+
+    .preference {
+        background: url(../images/phone.png) 5% 32% no-repeat;
+    }
+
+    .slider {
+        margin-bottom: 0;
+    }
+
+    .preference {
+        height: 900px;
+    }
+    .table__match__bottom-game{
+        padding: 5px 8px;
+    }
+    .table__description td:nth-child(even), .table__value td:nth-child(even) {
+        width:20px;}
+    input {
+        width: 300px;}
+    .form__right {
+        margin-right: 4%;
+    }
+}
 
 
 
