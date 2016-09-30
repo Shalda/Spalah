@@ -722,7 +722,7 @@ hr {
     }
 
     .before-table__text {
-        padding-left: 0px;
+        padding-left: 0;
         padding-bottom: 50px;
     }
 
@@ -732,6 +732,10 @@ hr {
     }
 }
 
+.bonus__text {
+    padding-right: 4% !important;
+}
+
 @media screen and (max-width: 905px) {
     *[class$="text"] {
         font-size: 1.2em;
@@ -739,6 +743,15 @@ hr {
 
     .header-main__nav__help, .header-main__nav__account {
         float: none;
+    }
+.bonus__social {
+    float: none }
+
+    .bonus__text {
+        float: none;
+        padding-right: 12%;
+        padding-left: 20px;
+        padding-bottom: 50px;
     }
 
     .header-banner p {
@@ -760,13 +773,19 @@ hr {
     .preference {
         height: 900px;
     }
-    .table__match__bottom-game{
+
+    .table__match__bottom-game {
         padding: 5px 8px;
     }
+
     .table__description td:nth-child(even), .table__value td:nth-child(even) {
-        width:20px;}
+        width: 20px;
+    }
+
     input {
-        width: 300px;}
+        width: 300px;
+    }
+
     .form__right {
         margin-right: 4%;
     }
