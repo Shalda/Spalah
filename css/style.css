@@ -450,12 +450,12 @@ td {
 }
 
 .form {
-    height: 800px;
     max-width: 1360px;
     margin: 0 auto;
     background: #f0f0f0;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 140px;
 }
 
 .form__left__text p, .form__right__text p {
@@ -537,7 +537,6 @@ form p {
 
 .footer {
     background: #f0f0f0;
-
 }
 
 .footer__wrapper {
@@ -639,6 +638,18 @@ form p {
 
 .footer-last {
     display: none;
+}
+#scrollup {
+    color: #007259;
+    font-size: 1.2em;
+    cursor: pointer;
+    align-self: center;
+    display: flex;
+    margin: 20px;
+}
+#scrollup span{
+align-self: center;
+padding-left: 5px;
 }
 
 /*sprite начало*/
@@ -987,6 +998,7 @@ form p {
             text-align: left;
         }
     }
+
 }
 
 
