@@ -941,7 +941,7 @@ form p {
     }
 
     .footer-last-line {
-        border-color: #d8d8d8;
+        border-color: rgba(215, 215, 215, 0.2)  ;
         display: inherit;
         order: 5;
         margin: 28px 0;
