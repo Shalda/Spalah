@@ -725,12 +725,8 @@ form p {
     padding-left: 5px;
 }
 
-.arrow {
-    font-weight:300;
-    font-size: 30px;
-    color: #9a9a9a;
 
-}
+
 
 /*sprite начало*/
 .appstore, .googleplay, .facebookw, .googlew, .vkw,
@@ -1182,12 +1178,22 @@ form p {
         display: none;
     }
     .table__match__bottom-game{
-        display: none;
-    }
-    .table__match__bottom-game:after {
-        display: block;
+        text-indent: -30000px;
+        background: transparent;
+       
+
     }
 
+
+    .table__match__bottom-game:after {
+        content: "";
+        display: block;
+        width: 17px;
+        height: 17px;
+        border-left: 2px solid #ccc;
+        border-bottom: 2px solid #ccc;
+        transform: rotate(-135deg);
+    }
 }
 
 
